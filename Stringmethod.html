@@ -1,0 +1,41 @@
+<html>
+<body>
+<script>
+
+function upcase()
+{
+var str = document.getElementById("str").value;
+var upstr = str.toUpperCase();
+document.getElementById("case").value = upstr;
+}
+function lowcase()
+{
+var str = document.getElementById("str").value;
+var lowstr = str.toLowerCase();
+document.getElementById("case").value = lowstr;
+}
+function charat()
+{
+var str = document.getElementById("str").value;
+var n = document.getElementById("idx").value;
+var ch = str.charAt(n);
+document.getElementById("case").value = ch;
+} 
+function charcodeat()
+{
+var str = document.getElementById("str").value;
+var n1 = document.getElementById("idx1").value;
+var ch1 = str.charCodeAt(n1);
+document.getElementById("case").value = ch1;
+} 
+</script>
+<h1>String Methods </h1>
+Enter a string : <input type = "text" id = "str" > <br><br><br> 
+<input type = "button" value = "Uppercase" onclick = "upcase()"> 
+<input type = "button" value = "Lowercase" onclick = "lowcase()"><br> <br> 
+<input type = "button" value = "CharAt" onclick = "charat()"> : <input type = "text" id = "idx"><br> <br> 
+<input type = "button" value = "CharCodeAt" onclick = "charcodeat()"> : <input type = "text" id = "idx1"><br> 
+<br><br>
+Result : <input type = "text" id = "case" > <br>
+</body>
+</html>
